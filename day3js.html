@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>happy raaj</p>
+    <script>
+        // creating an object
+        let person = {
+            name: "Aisha",
+            age : 25,
+            city: "jalandhar"
+        };
+        console.log("1. Object created:")
+        console.log(person)
+
+        // Accessing properties
+        console.log("\n 2. Accessing properties:")
+        console.log("Name:",person.name);
+        console.log("city:",person["city"]);
+
+        // Adding a new properties
+        person.country = "India";
+        console.log("\n 3. After property 'country':",person);
+
+        //updating properties
+        person.age = 26;
+        console.log("\n 4. after updating 'age':",person);
+
+        // deleting a properties
+        delete person.city;
+        console.log("\n 5. after deleting 'city':",person)
+
+        // defining a object with method
+        let student = {
+            name: "Raj",
+            marks: 85,
+            displayInfo: function(){
+                return this.name + "scored" + this.marks + "marks.";
+            }
+        };
+        console.log("\n 6. object with method");
+        console.log(student.displayInfo());
+
+
+        //nested objects
+        let employee = {
+            name: "priya",
+            department:{
+                name: "IT",
+                location: "Building 3"
+            }
+        };
+        console.log("\n 7. nested object:");
+        console.log("department name:", employee.department.name);
+        console.log("department location:",employee.department.location)
+
+
+        //looping through object properties
+        console.log("\n 8. looping through object properties:");
+        for (let key in person){
+            console.log(key + ": " + person[key]);
+            console.log(key + ": " + person[key]);
+        }
+        
+
+
+    </script>
+</body>
+</html>
