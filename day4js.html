@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // standard named function
+        function greet(){
+            console.log("Hello");
+        }
+        greet();
+
+        // function expression
+        let add=function(a,b){
+            return a+b;
+        };
+        console.log(add(5,3));
+
+        // anonymous function
+        setTimeout(function(){
+            console.log("this is an anonymous function");
+        },1000);
+
+
+        //arrow function
+        const multiply = (a,b) => a*b;
+        console.log(multiply(4,5));
+
+        //function arguments
+         function greet(name){
+            console.log("Hello " + name);
+        }
+        greet("happy");
+
+
+        //return statement
+        function sum(a,b){
+            return a+b;
+        }
+        let result = sum(5,7);
+        console.log(result);
+
+        //
+    </script>
+</body>
+</html>
